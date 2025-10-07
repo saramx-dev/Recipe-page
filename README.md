@@ -15,8 +15,8 @@ Thank you for visiting my solution. This project demonstrates a **responsive, mo
 
 
 ### Links
-- **Solution URL:** [solution URL here]()
-- **Live Site:** [live site URL here]()
+- **Solution URL:** [solution URL here](https://github.com/saramx-dev/Recipe-page)
+- **Live Site:** [live site URL here](https://saramx-dev.github.io/Recipe-page/)
 
 ---
 
@@ -45,7 +45,7 @@ In future iterations, I plan to:
 
 ### Useful Resources
 - [Sass Official Documentation](https://sass-lang.com/documentation) – for mastering Sass workflow
-- and other internet reources
+- and other internet resources.
 
 ---
 
