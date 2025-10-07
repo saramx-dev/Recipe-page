@@ -1,0 +1,18 @@
+
+@use 'variables' as *;
+@use 'maps' as *;
+
+/* spaces (padding , margin) */
+@function space($key) {
+  @return map-get($spacing, $key);
+}
+
+/* font-size */
+@function font-size($key) {
+  @return map-get($font-sizes, $key);
+}
+
+/* responsive font-size */
+@function fluid-font($min, $vw, $max) {
+  @return clamp(#{$min}, #{$vw}, #{$max});
+}

@@ -1,0 +1,16 @@
+
+/* responsive layout */
+@use 'variables' as *;
+@use 'maps' as *;
+@use 'functions' as *;
+
+@mixin responsive-MaxWidth($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+@mixin responsive-MinWidth($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

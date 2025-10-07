@@ -1,0 +1,120 @@
+@use '../abstracts/index' as *;
+
+/* ===========================================
+   Recipe Card Component
+   =========================================== */
+.recipe-card {
+  width: min(100%, 730px);
+  margin: 0 auto;
+  background: $white;
+  border-radius: space("md");
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+  display: grid;
+  place-content: center;
+
+  img {
+    border-radius: space("md") space("md") 0 0;
+  }
+
+  &__content {
+    padding: space("xl");
+    color: $Stone-600;
+    line-height: $line-height-base;
+
+    &>* + * {
+      margin-top: space("xl");
+    }
+
+    /* Title and Description */
+    &-title {
+      font-family: $font-familyTitle;
+      color: $Stone-900;
+      line-height: 1.2;
+      margin-bottom: space("sm");
+    }
+
+ &-desc {
+  font-size: fluid-font(space("base"), "calc(1vw + 0.5rem)", font-size("lg"));
+}
+
+    /* Preparation Time Section */
+    &-time {
+      background: $Rose-50;
+      padding: space("xl");
+      border-radius: space("md");
+
+      .recipe-time__title {
+        color: $Rose-800;
+        font-weight: $FW-700;
+        margin-bottom: space("sm");
+      }
+
+      ul {
+
+        li {
+          margin-top: space("sm");
+          font-size: font-size("sm");
+        }
+      }
+    }
+
+    /* Ingredients Section */
+/*     &-ingredients {
+
+    } */
+
+    /* Instructions Section */
+      &-instructions {
+        ol{
+            font-size: fluid-font(space("base"), "calc(1vw + 0.5rem)", font-size("lg"));
+}
+          }
+
+    /* Nutrition Section */
+    &-nutrition {
+      p {
+        margin-bottom: space("md");
+        font-size: fluid-font(space("base"), "calc(1vw + .2rem)", font-size("lg"));
+}
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+          border-bottom: 1px solid $Stone-150;
+        }
+
+        th, td {
+          text-align: left;
+          padding: space("sm") 0;
+          font-size: font-size("base");
+        }
+
+        th {
+          font-weight: $FW-400;
+          padding-left: space("lg");
+        }
+
+        td {
+          color: $Brown-800;
+          font-weight: $FW-700;
+        }
+
+        tr:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+/* ===========================================
+   Responsive
+   =========================================== */
+@include responsive-MinWidth("md") {
+  .recipe-card {
+    margin: space("xxl") auto;
+  }
+}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* # variables */
+/*## Fonts */
+/* shadow */
+/* 🧱 Spacing scale */
+/* font-size */
+/* breakpoints */
+/* spaces (padding , margin) */
+/* font-size */
+/* responsive font-size */
+/* responsive layout */
+/* base */
+html, body, ul, ol, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* component */
+/* ===========================================
+   Recipe Card Component
+   =========================================== */
+.recipe-card {
+  width: min(100%, 730px);
+  margin: 0 auto;
+  background: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: grid;
+  place-content: center;
+}
+.recipe-card img {
+  border-radius: 1rem 1rem 0 0;
+}
+.recipe-card__content {
+  padding: 2rem;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5;
+  /* Title and Description */
+  /* Preparation Time Section */
+  /* Ingredients Section */
+  /*     &-ingredients {
+
+      } */
+  /* Instructions Section */
+  /* Nutrition Section */
+}
+.recipe-card__content > * + * {
+  margin-top: 2rem;
+}
+.recipe-card__content-title {
+  font-family: "Young Serif", serif;
+  color: hsl(24, 5%, 18%);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.recipe-card__content-desc {
+  font-size: clamp(, calc(1vw + 0.5rem), 1.25rem);
+}
+.recipe-card__content-time {
+  background: hsl(330, 100%, 98%);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.recipe-card__content-time .recipe-time__title {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.recipe-card__content-time ul li {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+.recipe-card__content-instructions ol {
+  font-size: clamp(, calc(1vw + 0.5rem), 1.25rem);
+}
+.recipe-card__content-nutrition p {
+  margin-bottom: 1rem;
+  font-size: clamp(, calc(1vw + .2rem), 1.25rem);
+}
+.recipe-card__content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.recipe-card__content table tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.recipe-card__content table th, .recipe-card__content table td {
+  text-align: left;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+.recipe-card__content table th {
+  font-weight: 400;
+  padding-left: 1.5rem;
+}
+.recipe-card__content table td {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+.recipe-card__content table tr:last-child {
+  border-bottom: none;
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+@media (min-width: 768px) {
+  .recipe-card {
+    margin: 3rem auto;
+  }
+}
+body {
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: hsl(30, 54%, 90%);
+  font-size: 1rem;
+}
+
+h3 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+ul li,
+ol li {
+  position: relative;
+  padding-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+ul li::marker,
+ol li::marker {
+  position: absolute;
+  left: 0;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=style.css.map */
