@@ -48,7 +48,9 @@ img {
   place-content: center;
 }
 .recipe-card img {
-  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .recipe-card__content {
   padding: 2rem;
@@ -126,6 +128,13 @@ img {
 @media (min-width: 768px) {
   .recipe-card {
     margin: 3rem auto;
+  }
+  .recipe-card img {
+    padding: 2rem;
+    border-radius: 3rem;
+  }
+  .recipe-card__content {
+    padding: 3rem;
   }
 }
 body {

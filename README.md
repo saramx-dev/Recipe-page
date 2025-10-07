@@ -11,7 +11,7 @@ Frontend Mentor challenges provide realistic front-end projects that help develo
 Thank you for visiting my solution. This project demonstrates a **responsive, mobile-first recipe page** built with **semantic HTML5** and **modern CSS techniques using Sass**.
 
 ### Screenshot
-![Mobile Screenshot](./design/screencapture-mobile.png)
+![Desktop Screenshot](./design/screencapture-desktop.png)
 
 
 ### Links

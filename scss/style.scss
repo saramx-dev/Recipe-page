@@ -12,29 +12,29 @@ body {
   font-weight: $FW-400;
   line-height: $line-height-base;
   background-color: $Stone-100;
-  font-size: font-size("base");
+  font-size: #{font-size("base")};
 }
 
 h3 {
   color: $Brown-800;
   font-family: $font-familyTitle;
   font-size: 1.5rem;
-  margin-bottom: space("md");
+  margin-bottom: #{space("md")};
 }
 
 ul,
 ol {
-  padding-left: space("md") + space("xs");
+  padding-left: #{space("md") + space("xs")};
   li {
     position: relative;
-    padding-left: space("sm") + space("xs");
-      margin-top: space("sm") + space("xs");
+    padding-left: #{space("sm") + space("xs")};
+      margin-top: #{space("sm") + space("xs")};
     &::marker {
       position: absolute;
       left: 0;
       color: $Brown-800;
       font-weight: $FW-700;
-      font-size: font-size("sm");
+      font-size: #{font-size("sm")};
     }
   }
 }

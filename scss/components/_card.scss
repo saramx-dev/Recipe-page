@@ -13,8 +13,12 @@
   display: grid;
   place-content: center;
 
-  img {
-    border-radius: space("md") space("md") 0 0;
+  img{
+    width: 100%; 
+ border-top-left-radius: #{space("md")};
+border-top-right-radius: #{space("md")};
+
+
   }
 
   &__content {
@@ -114,7 +118,17 @@
    Responsive
    =========================================== */
 @include responsive-MinWidth("md") {
-  .recipe-card {
-    margin: space("xxl") auto;
+ .recipe-card {
+  margin: #{space("xxl")} auto;
+
+  img {
+    padding: #{space("xl")};
+    border-radius: #{space("xxl")};
   }
+
+  &__content {
+    padding: #{space("xxl")};
+  }
+}
+
 }
